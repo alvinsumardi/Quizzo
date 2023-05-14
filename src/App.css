@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+main {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #F5F7FB;
+  color: #293264;
+  display: flex;
+  align-items: center;
+  background-image: url("./src/assets/bg.png");
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+
+}
+
+button {
+  background: #4D5B9E;
+  border-radius: 15px;
+  padding: 16px 30px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.intro-container {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.button-small {
+  border: 2px solid #4D5B9E;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #293264;
+  font-weight: 500;
+  padding: 5px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-small:hover {
+  background-color: #4D5B9E;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.selected {
+  background-color: #D6DBF5;
+  border-color: #D6DBF5;
 }
 
-.card {
-  padding: 2em;
+.green {
+  background-color: #94D7A2;
+  color: #293264;
+  border-color: #94D7A2;
 }
 
-.read-the-docs {
-  color: #888;
+.red {
+  background-color: #F8BCBC;
+  color: #293264;
+  border-color: #F8BCBC;
+}
+
+.blue {
+  background-color: cornflowerblue;
+  color: #293264;
+  border-color: cornflowerblue;
+}
+
+.question-group {
+  padding: 30px 0;
+  border-bottom: 1px solid #DBDEF0;
+}
+
+.question-group h2 {
+  margin-top: 0;
+}
+
+.game-container {
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
 }
